@@ -140,7 +140,6 @@
             }, 2000);
         }
 
-        // Copy button functionality
         copyBtn.addEventListener('click', async () => {
             if (textArea.value.trim() === '') {
                 showStatus(' Nothing to copy!');
@@ -156,7 +155,6 @@
             }
         });
 
-        // Paste button functionality
         pasteBtn.addEventListener('click', async () => {
             try {
                 const clipboardText = await navigator.clipboard.readText();
@@ -169,5 +167,6 @@
         });
     </script>
 </body>
+
 
 </html>
